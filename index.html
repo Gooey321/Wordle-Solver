@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wordle Solver</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="split-container">
+        <!-- Left Column: Results -->
+        <div class="results-section">
+          <div id="results">
+            <h2>Top 10 Results:</h2>
+            <ul id="top-words-list"></ul>
+          </div>
+        </div>
+
+        <!-- Right Column: Main Content -->
+        <div class="main-section">
+          <div class="word-input">
+            <input type="text" maxlength="1" />
+            <input type="text" maxlength="1" />
+            <input type="text" maxlength="1" />
+            <input type="text" maxlength="1" />
+            <input type="text" maxlength="1" />
+          </div>
+          <div class="location-input">
+            <button id="stateButton1"></button>
+            <button id="stateButton2"></button>
+            <button id="stateButton3"></button>
+            <button id="stateButton4"></button>
+            <button id="stateButton5"></button>
+          </div>
+          <button id="submit">Submit</button>
+
+          <h3>Letter Exclusion:</h3>
+          <div class="letter-grid">
+            <!-- Letter buttons A-Z -->
+            <button class="letter-button" data-letter="a">A</button>
+            <button class="letter-button" data-letter="b">B</button>
+            <button class="letter-button" data-letter="c">C</button>
+            <button class="letter-button" data-letter="d">D</button>
+            <button class="letter-button" data-letter="e">E</button>
+            <button class="letter-button" data-letter="f">F</button>
+            <button class="letter-button" data-letter="g">G</button>
+            <button class="letter-button" data-letter="h">H</button>
+            <button class="letter-button" data-letter="i">I</button>
+            <button class="letter-button" data-letter="j">J</button>
+            <button class="letter-button" data-letter="k">K</button>
+            <button class="letter-button" data-letter="l">L</button>
+            <button class="letter-button" data-letter="m">M</button>
+            <button class="letter-button" data-letter="n">N</button>
+            <button class="letter-button" data-letter="o">O</button>
+            <button class="letter-button" data-letter="p">P</button>
+            <button class="letter-button" data-letter="q">Q</button>
+            <button class="letter-button" data-letter="r">R</button>
+            <button class="letter-button" data-letter="s">S</button>
+            <button class="letter-button" data-letter="t">T</button>
+            <button class="letter-button" data-letter="u">U</button>
+            <button class="letter-button" data-letter="v">V</button>
+            <button class="letter-button" data-letter="w">W</button>
+            <button class="letter-button" data-letter="x">X</button>
+            <button class="letter-button" data-letter="y">Y</button>
+            <button class="letter-button" data-letter="z">Z</button>
+          </div>
+
+          <!-- Position-specific Exclusions -->
+          <div class="position-exclusions">
+            <h3>Select Position to Exclude Letter From:</h2>
+            <div class="position-selector">
+              <button class="position-button" data-pos="1">1</button>
+              <button class="position-button" data-pos="2">2</button>
+              <button class="position-button" data-pos="3">3</button>
+              <button class="position-button" data-pos="4">4</button>
+              <button class="position-button" data-pos="5">5</button>
+            </div>
+            <div class="exclusion-letters">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
